@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="loginstyles.css" />
+    <link rel="icon" href="logo.png"/>
+    <link
+      rel="icon"
+      href="Images/Restaurants/download.png"
+      type="image/icon type"
+    />
+  </head>
+  <body class="login-page">
+    <div class="container">
+      <div class="loginbg">
+        <div class="box signin">
+          <h2>Already Have an Account?</h2>
+          <button class="signinbtn" id="signinButton">Sign in</button>
+        </div>
+        <div class="box signup">
+          <h2>Don't Have an Account?</h2>
+          <button class="signupbtn" id="signupButton">Sign up</button>
+        </div>
+      </div>
+      <div class="formbx">
+        <div class="form signinform">
+          <form id="signinForm">
+            <h2 style="color: rgb(0, 0, 0)">CompetePrep</h2>
+            <h3>Sign In</h3>
+            <input
+              type="text"
+              placeholder="Username"
+              id="signinUsername"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              id="signinPassword"
+              required
+            />
+            <input type="submit" value="Login" />
+            <a href="#" class="forgot">Forgot password?</a>
+          </form>
+        </div>
+        <div class="form signupform">
+          <form id="signupForm">
+            <h3>Sign up</h3>
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              id="signupName"
+              required
+            />
+            <input type="email" placeholder="Email" id="signupEmail" required />
+            <input
+              type="date"
+              placeholder="Enter your Date of birth"
+              id="signupDOB"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              id="signupPassword"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Confirm password"
+              id="signupConfirmPassword"
+              required
+            />
+            <input type="submit" value="Sign Up" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const registeredUsers = [];
+
+      const predefinedUsers = [
+        { username: "siddhu@gmail.com", password: "12345678" },
+        // Add more predefined users as needed
+      ];
+
+      const signinButton = document.getElementById("signinButton");
+      const signupButton = document.getElementById("signupButton");
+      const formbx = document.querySelector(".formbx");
+
+      signupButton.addEventListener("click", () => {
+        formbx.classList.add("active");
+      });
+
+      signinButton.addEventListener("click", () => {
+        formbx.classList.remove("active");
+      });
+
+      document
+        .getElementById("signinForm")
+        .addEventListener("submit", (event) => {
+          event.preventDefault();
+
+          const username = document.getElementById("signinUsername").value;
+          const password = document.getElementById("signinPassword").value;
+
+          if (username === "" || password === "") {
+            alert("Please enter your username and password.");
+            return;
+          }
+
+          const user = predefinedUsers.find(
+            (user) => user.username === username && user.password === password
+          );
+
+          if (user) {
+            alert("Login Successful!");
+            var newWindow = window.open("/sem project/index.html");
+            console.log("posted");
+
+            newWindow.addEventListener("load", function () {
+              newWindow.postMessage("hello", "*");
+            });
+          } else {
+            alert("Invalid username or password");
+          }
+        });
+
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", (event) => {
+          event.preventDefault();
+
+          if (validateSignupForm()) {
+            const name = document.getElementById("signupName").value;
+            const email = document.getElementById("signupEmail").value;
+            const dob = document.getElementById("signupDOB").value;
+            const password = document.getElementById("signupPassword").value;
+
+            const newUser = { name, email, dob, password };
+
+            registeredUsers.push(newUser);
+
+            document.getElementById("signupName").value = "";
+            document.getElementById("signupEmail").value = "";
+            document.getElementById("signupDOB").value = "";
+            document.getElementById("signupPassword").value = "";
+            document.getElementById("signupConfirmPassword").value = "";
+
+            alert("Signup Successful!");
+
+          }
+        });
+
+      function validateSignupForm() {
+        const name = document.getElementById("signupName").value;
+        const email = document.getElementById("signupEmail").value;
+        const dob = document.getElementById("signupDOB").value;
+        const password = document.getElementById("signupPassword").value;
+        const confirmPassword = document.getElementById(
+          "signupConfirmPassword"
+        ).value;
+
+        if (
+          name === "" ||
+          email === "" ||
+          dob === "" ||
+          password === "" ||
+          confirmPassword === ""
+        ) {
+          alert("Please fill in all the required fields.");
+          return false;
+        }
+
+        if (password !== confirmPassword) {
+          alert("Passwords do not match");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>

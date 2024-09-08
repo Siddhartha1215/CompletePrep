@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"/>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
+    <title>UPSC Quiz</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+            Welcome Back!!, UPSC-bound Dreamweavers!</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+      <div style="padding-top: 3%;" class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Welcome<span class="text-warning"> Future Civil Servants</span></h1>
+            <p class="lead my-4">
+                Ignite your mind, fuel your dreams, and conquer the UPSC with the power of your relentless study.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="p-5">
+      <div class="container">
+        <h2 id="english" class="text-center mb-5">GENERAL ABILITY AND INTELLIGENCE</h2>
+        <div class="row g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body">
+                <form id="quizForm">
+                  <ol start="1">
+                    <li>Pointing towards a photograph Mr. Ajit said "She is my father's wife's son's only sister." What is the relation of the person in the photograph with Mr. Ajit?</li>
+                    <label><input type="radio" name="upsc1" value="Daughter">Daughter</label><br>
+                    <label><input type="radio" name="upsc1" value="Mother's sister">Mother's sister</label><br>
+                    <label><input type="radio" name="upsc1" value="Cousin">Cousin</label><br>
+                    <label><input type="radio" name="upsc1" value="Sister">Sister</label><br>
+                    <!-- Correct Answer: Sister -->
+
+                    <li>On a large ground, there is a straight tall vertical wall of length 28 m. A goat is tied to a point on the ground which is at the middle of the wall, using a rope. If the length of the rope is 21 m, what is the area of the region (in sq. m) around the wall that the goat can access?</li>
+                    <label><input type="radio" name="upsc2" value="847">847</label><br>
+                    <label><input type="radio" name="upsc2" value="851">851</label><br>
+                    <label><input type="radio" name="upsc2" value="693">693</label><br>
+                    <label><input type="radio" name="upsc2" value="654">654</label><br>
+                    <!-- Correct Answer: 847 -->
+
+                    <li>A rectangular wall is divided into four squares of equal size where there are two rows each having two squares. The top left square is coloured with green. If, including green, there are three colours available and each square is coloured using any one of these three colours such that no two adjacent squares get painted with the same colour; then how many colour combinations are possible?</li>
+                    <label><input type="radio" name="upsc3" value="2">2</label><br>
+                    <label><input type="radio" name="upsc3" value="4">4</label><br>
+                    <label><input type="radio" name="upsc3" value="6">6</label><br>
+                    <label><input type="radio" name="upsc3" value="8">8</label><br>
+                    <!-- Correct Answer: 4 -->
+
+                    <li>Three circles of radius 5 cm each, touch each other. If the points of contact are P, Q and R, then what is the area of the triangle PQR in sq. cm?</li>
+                    <label><input type="radio" name="upsc4" value="253">253</label><br>
+                    <label><input type="radio" name="upsc4" value="6">6</label><br>
+                    <label><input type="radio" name="upsc4" value="25√3">25√3</label><br>
+                    <label><input type="radio" name="upsc4" value="4">4</label><br>
+                    <!-- Correct Answer: 25√3 -->
+                    <li>Which planet is known as the "Red Planet"?</li>
+                    <label><input type="radio" name="upsc5" value="Venus">Venus</label><br>
+                    <label><input type="radio" name="upsc5" value="Jupiter">Jupiter</label><br>
+                    <label><input type="radio" name="upsc5" value="Mars">Mars</label><br>
+                    <label><input type="radio" name="upsc5" value="Saturn">Saturn</label><br>
+                    <!-- Correct Answer: Mars -->
+
+                    <li>Who is the author of the famous novel "To Kill a Mockingbird"?</li>
+                    <label><input type="radio" name="upsc6" value="J.D. Salinger">J.D. Salinger</label><br>
+                    <label><input type="radio" name="upsc6" value="Mark Twain">Mark Twain</label><br>
+                    <label><input type="radio" name="upsc6" value="Harper Lee">Harper Lee</label><br>
+                    <label><input type="radio" name="upsc6" value="George Orwell">George Orwell</label><br>
+                    <!-- Correct Answer: Harper Lee -->
+
+                    <li>What is the currency of Japan?</li>
+                    <label><input type="radio" name="upsc7" value="Dollar">Dollar</label><br>
+                    <label><input type="radio" name="upsc7" value="Euro">Euro</label><br>
+                    <label><input type="radio" name="upsc7" value="Yen">Yen</label><br>
+                    <label><input type="radio" name="upsc7" value="Pound">Pound</label><br>
+                    <!-- Correct Answer: Yen -->
+
+                    <li>Which gas is most abundant in the Earth's atmosphere?</li>
+                    <label><input type="radio" name="upsc8" value="Nitrogen">Nitrogen</label><br>
+                    <label><input type="radio" name="upsc8" value="Oxygen">Oxygen</label><br>
+                    <label><input type="radio" name="upsc8" value="Carbon dioxide">Carbon dioxide</label><br>
+                    <label><input type="radio" name="upsc8" value="Argon">Argon</label><br>
+                    <!-- Correct Answer: Nitrogen -->
+
+                    <li>Which Indian state is known as the "Land of Five Rivers"?</li>
+                    <label><input type="radio" name="upsc9" value="Punjab">Punjab</label><br>
+                    <label><input type="radio" name="upsc9" value="Haryana">Haryana</label><br>
+                    <label><input type="radio" name="upsc9" value="Uttar Pradesh">Uttar Pradesh</label><br>
+                    <label><input type="radio" name="upsc9" value="Bihar">Bihar</label><br>
+                    <!-- Correct Answer: Punjab -->
+
+                    <li>Who was the first President of the United States?</li>
+                    <label><input type="radio" name="upsc10" value="Abraham Lincoln">Abraham Lincoln</label><br>
+                    <label><input type="radio" name="upsc10" value="George Washington">George Washington</label><br>
+                    <label><input type="radio" name="upsc10" value="Thomas Jefferson">Thomas Jefferson</label><br>
+                    <label><input type="radio" name="upsc10" value="John Adams">John Adams</label><br>
+                    <!-- Correct Answer: George Washington -->
+
+                    <li>Which gas is most abundant in Earth's atmosphere?</li>
+                    <label><input type="radio" name="upsc11" value="Oxygen">Oxygen</label><br>
+                    <label><input type="radio" name="upsc11" value="Carbon Dioxide">Carbon Dioxide</label><br>
+                    <label><input type="radio" name="upsc11" value="Nitrogen">Nitrogen</label><br>
+                    <label><input type="radio" name="upsc11" value="Helium">Helium</label><br>
+                    <!-- Correct Answer: Nitrogen -->
+
+                    <li>Who wrote the play "Romeo and Juliet"?</li>
+                    <label><input type="radio" name="upsc12" value="William Shakespeare">William Shakespeare</label><br>
+                    <label><input type="radio" name="upsc12" value="Charles Dickens">Charles Dickens</label><br>
+                    <label><input type="radio" name="upsc12" value="Jane Austen">Jane Austen</label><br>
+                    <label><input type="radio" name="upsc12" value="Mark Twain">Mark Twain</label><br>
+                    <!-- Correct Answer: William Shakespeare -->
+
+                    <li>Which ancient wonder is known for its large pyramid structure?</li>
+                    <label><input type="radio" name="upsc13" value="Hanging Gardens of Babylon">Hanging Gardens of Babylon</label><br>
+                    <label><input type="radio" name="upsc13" value="Statue of Zeus at Olympia">Statue of Zeus at Olympia</label><br>
+                    <label><input type="radio" name="upsc13" value="Temple of Artemis at Ephesus">Temple of Artemis at Ephesus</label><br>
+                    <label><input type="radio" name="upsc13" value="Great Pyramid of Giza">Great Pyramid of Giza</label><br>
+                    <!-- Correct Answer: Great Pyramid of Giza -->
+
+                    <li>Which river is the longest in the world?</li>
+                    <label><input type="radio" name="upsc14" value="Amazon River">Amazon River</label><br>
+                    <label><input type="radio" name="upsc14" value="Nile River">Nile River</label><br>
+                    <label><input type="radio" name="upsc14" value="Yangtze River">Yangtze River</label><br>
+                    <label><input type="radio" name="upsc14" value="Mississippi River">Mississippi River</label><br>
+                    <!-- Correct Answer: Nile River -->
+
+                    <li>Which famous scientist formulated the theory of relativity?</li>
+                    <label><input type="radio" name="upsc15" value="Isaac Newton">Isaac Newton</label><br>
+                    <label><input type="radio" name="upsc15" value="Albert Einstein">Albert Einstein</label><br>
+                    <label><input type="radio" name="upsc15" value="Niels Bohr">Niels Bohr</label><br>
+                    <label><input type="radio" name="upsc15" value="Galileo Galilei">Galileo Galilei</label><br>
+                    <!-- Correct Answer: Albert Einstein -->
+
+                    <li>Who painted the Mona Lisa?</li>
+                    <label><input type="radio" name="upsc16" value="Vincent van Gogh">Vincent van Gogh</label><br>
+                    <label><input type="radio" name="upsc16" value="Pablo Picasso">Pablo Picasso</label><br>
+                    <label><input type="radio" name="upsc16" value="Leonardo da Vinci">Leonardo da Vinci</label><br>
+                    <label><input type="radio" name="upsc16" value="Rembrandt">Rembrandt</label><br>
+                    <!-- Correct Answer: Leonardo da Vinci -->
+
+                    <li>Which planet is known as the "Red Planet"?</li>
+                    <label><input type="radio" name="upsc17" value="Venus">Venus</label><br>
+                    <label><input type="radio" name="upsc17" value="Jupiter">Jupiter</label><br>
+                    <label><input type="radio" name="upsc17" value="Mars">Mars</label><br>
+                    <label><input type="radio" name="upsc17" value="Saturn">Saturn</label><br>
+                    <!-- Correct Answer: Mars -->
+
+                    <li>What is the chemical symbol for gold?</li>
+                    <label><input type="radio" name="upsc18" value="Au">Au</label><br>
+                    <label><input type="radio" name="upsc18" value="Ag">Ag</label><br>
+                    <label><input type="radio" name="upsc18" value="Fe">Fe</label><br>
+                    <label><input type="radio" name="upsc18" value="Hg">Hg</label><br>
+                    <!-- Correct Answer: Au -->
+
+                    <li>What is the currency of Japan?</li>
+                    <label><input type="radio" name="upsc19" value="Rupee">Rupee</label><br>
+                    <label><input type="radio" name="upsc19" value="Yen">Yen</label><br>
+                    <label><input type="radio" name="upsc19" value="Dollar">Dollar</label><br>
+                    <label><input type="radio" name="upsc19" value="Euro">Euro</label><br>
+                    <!-- Correct Answer: Yen -->
+
+                    <li>What is the chemical formula for water?</li>
+                    <label><input type="radio" name="upsc20" value="H2O">H2O</label><br>
+                    <label><input type="radio" name="upsc20" value="CO2">CO2</label><br>
+                    <label><input type="radio" name="upsc20" value="CH4">CH4</label><br>
+                    <label><input type="radio" name="upsc20" value="O2">O2</label><br>
+                    <!-- Correct Answer: H2O -->
+
+                    <li>Who is known as the "Father of the Nation" in India?</li>
+                    <label><input type="radio" name="upsc21" value="Sardar Patel">Sardar Patel</label><br>
+                    <label><input type="radio" name="upsc21" value="Subhas Chandra Bose">Subhas Chandra Bose</label><br>
+                    <label><input type="radio" name="upsc21" value="Jawaharlal Nehru">Jawaharlal Nehru</label><br>
+                    <label><input type="radio" name="upsc21" value="Mahatma Gandhi">Mahatma Gandhi</label><br>
+                    <!-- Correct Answer: Mahatma Gandhi -->
+
+                    <li>Which planet is known as the "Red Planet"?</li>
+                    <label><input type="radio" name="upsc22" value="Earth">Earth</label><br>
+                    <label><input type="radio" name="upsc22" value="Venus">Venus</label><br>
+                    <label><input type="radio" name="upsc22" value="Mars">Mars</label><br>
+                    <label><input type="radio" name="upsc22" value="Jupiter">Jupiter</label><br>
+                    <!-- Correct Answer: Mars -->
+
+                    <li>Who authored the famous play "Hamlet"?</li>
+                    <label><input type="radio" name="upsc23" value="William Wordsworth">William Wordsworth</label><br>
+                    <label><input type="radio" name="upsc23" value="John Keats">John Keats</label><br>
+                    <label><input type="radio" name="upsc23" value="William Shakespeare">William Shakespeare</label><br>
+                    <label><input type="radio" name="upsc23" value="George Orwell">George Orwell</label><br>
+                    <!-- Correct Answer: William Shakespeare -->
+
+                    <li>What is the chemical symbol for Gold?</li>
+                    <label><input type="radio" name="upsc24" value="Go">Go</label><br>
+                    <label><input type="radio" name="upsc24" value="Ag">Ag</label><br>
+                    <label><input type="radio" name="upsc24" value="Au">Au</label><br>
+                    <label><input type="radio" name="upsc24" value="Ge">Ge</label><br>
+                    <!-- Correct Answer: Au -->
+
+                    <li>Which river is known as the "Sorrow of Bengal"?</li>
+                    <label><input type="radio" name="upsc25" value="Ganges">Ganges</label><br>
+                    <label><input type="radio" name="upsc25" value="Brahmaputra">Brahmaputra</label><br>
+                    <label><input type="radio" name="upsc25" value="Yamuna">Yamuna</label><br>
+                    <label><input type="radio" name="upsc25" value="Indus">Indus</label><br>
+                    <!-- Correct Answer: Brahmaputra -->
+
+                    <li>Who painted the famous artwork "Mona Lisa"?</li>
+                    <label><input type="radio" name="upsc26" value="Vincent van Gogh">Vincent van Gogh</label><br>
+                    <label><input type="radio" name="upsc26" value="Leonardo da Vinci">Leonardo da Vinci</label><br>
+                    <label><input type="radio" name="upsc26" value="Pablo Picasso">Pablo Picasso</label><br>
+                    <label><input type="radio" name="upsc26" value="Michelangelo">Michelangelo</label><br>
+                    <!-- Correct Answer: Leonardo da Vinci -->
+
+                    <li>Which gas is responsible for the "Greenhouse Effect"?</li>
+                    <label><input type="radio" name="upsc27" value="Oxygen">Oxygen</label><br>
+                    <label><input type="radio" name="upsc27" value="Carbon Dioxide">Carbon Dioxide</label><br>
+                    <label><input type="radio" name="upsc27" value="Methane">Methane</label><br>
+                    <label><input type="radio" name="upsc27" value="Nitrogen">Nitrogen</label><br>
+                    <!-- Correct Answer: Carbon Dioxide -->
+
+                    <li>Who is the author of the book "1984"?</li>
+                    <label><input type="radio" name="upsc28" value="George Orwell">George Orwell</label><br>
+                    <label><input type="radio" name="upsc28" value="Aldous Huxley">Aldous Huxley</label><br>
+                    <label><input type="radio" name="upsc28" value="Fyodor Dostoevsky">Fyodor Dostoevsky</label><br>
+                    <label><input type="radio" name="upsc28" value="H.G. Wells">H.G. Wells</label><br>
+                    <!-- Correct Answer: George Orwell -->
+
+                    <li>Which gas is known as the "Laughing Gas"?</li>
+                    <label><input type="radio" name="upsc29" value="Oxygen">Oxygen</label><br>
+                    <label><input type="radio" name="upsc29" value="Nitrogen">Nitrogen</label><br>
+                    <label><input type="radio" name="upsc29" value="Carbon Dioxide">Carbon Dioxide</label><br>
+                    <label><input type="radio" name="upsc29" value="Nitrous Oxide">Nitrous Oxide</label><br>
+                    <!-- Correct Answer: Nitrous Oxide -->
+
+                    <li>What is the capital city of Brazil?</li>
+                    <label><input type="radio" name="upsc30" value="Sao Paulo">Sao Paulo</label><br>
+                    <label><input type="radio" name="upsc30" value="Brasilia">Brasilia</label><br>
+                    <label><input type="radio" name="upsc30" value="Rio de Janeiro">Rio de Janeiro</label><br>
+                    <label><input type="radio" name="upsc30" value="Salvador">Salvador</label><br>
+                    <!-- Correct Answer: Brasilia -->
+
+                    <li>Which gas is known as the "Laughing Gas"?</li>
+                    <label><input type="radio" name="upsc31" value="Oxygen">Oxygen</label><br>
+                    <label><input type="radio" name="upsc31" value="Carbon Dioxide">Carbon Dioxide</label><br>
+                    <label><input type="radio" name="upsc31" value="Nitrous Oxide">Nitrous Oxide</label><br>
+                    <label><input type="radio" name="upsc31" value="Hydrogen">Hydrogen</label><br>
+                    <!-- Correct Answer: Nitrous Oxide -->
+
+                    <li>Who is known as the "Father of the Indian Constitution"?</li>
+                    <label><input type="radio" name="upsc32" value="Mahatma Gandhi">Mahatma Gandhi</label><br>
+                    <label><input type="radio" name="upsc32" value="Jawaharlal Nehru">Jawaharlal Nehru</label><br>
+                    <label><input type="radio" name="upsc32" value="B.R. Ambedkar">B.R. Ambedkar</label><br>
+                    <label><input type="radio" name="upsc32" value="Sardar Patel">Sardar Patel</label><br>
+                    <!-- Correct Answer: B.R. Ambedkar -->
+
+                    <li>Which planet is known as the "Morning Star" or "Evening Star"?</li>
+                    <label><input type="radio" name="upsc33" value="Mars">Mars</label><br>
+                    <label><input type="radio" name="upsc33" value="Venus">Venus</label><br>
+                    <label><input type="radio" name="upsc33" value="Mercury">Mercury</label><br>
+                    <label><input type="radio" name="upsc33" value="Jupiter">Jupiter</label><br>
+                    <!-- Correct Answer: Venus -->
+
+                    <li>Who composed the music for the "Symphony No. 9" or "Choral Symphony"?</li>
+                    <label><input type="radio" name="upsc34" value="Wolfgang Amadeus Mozart">Wolfgang Amadeus Mozart</label><br>
+                    <label><input type="radio" name="upsc34" value="Ludwig van Beethoven">Ludwig van Beethoven</label><br>
+                    <label><input type="radio" name="upsc34" value="Johann Sebastian Bach">Johann Sebastian Bach</label><br>
+                    <label><input type="radio" name="upsc34" value="Franz Schubert">Franz Schubert</label><br>
+                    <!-- Correct Answer: Ludwig van Beethoven -->
+
+                    <li>Which famous Indian leader is known for his "Quit India Movement"?</li>
+                    <label><input type="radio" name="upsc35" value="Subhas Chandra Bose">Subhas Chandra Bose</label><br>
+                    <label><input type="radio" name="upsc35" value="Mahatma Gandhi">Mahatma Gandhi</label><br>
+                    <label><input type="radio" name="upsc35" value="Sardar Patel">Sardar Patel</label><br>
+                    <label><input type="radio" name="upsc35" value="Jawaharlal Nehru">Jawaharlal Nehru</label><br>
+                    <!-- Correct Answer: Mahatma Gandhi -->
+
+                    <li>Which planet is known as the "Giant Planet"?</li>
+                    <label><input type="radio" name="upsc36" value="Mars">Mars</label><br>
+                    <label><input type="radio" name="upsc36" value="Jupiter">Jupiter</label><br>
+                    <label><input type="radio" name="upsc36" value="Venus">Venus</label><br>
+                    <label><input type="radio" name="upsc36" value="Mercury">Mercury</label><br>
+                    <!-- Correct Answer: Jupiter -->
+
+                    <li>Who wrote the famous novel "War and Peace"?</li>
+                    <label><input type="radio" name="upsc37" value="Fyodor Dostoevsky">Fyodor Dostoevsky</label><br>
+                    <label><input type="radio" name="upsc37" value="Victor Hugo">Victor Hugo</label><br>
+                    <label><input type="radio" name="upsc37" value="Herman Melville">Herman Melville</label><br>
+                    <label><input type="radio" name="upsc37" value="Leo Tolstoy">Leo Tolstoy</label><br>
+                    <!-- Correct Answer: Leo Tolstoy -->
+
+                    <li>Which gas is responsible for the "Ozone Layer" in the Earth's atmosphere?</li>
+                    <label><input type="radio" name="upsc38" value="Oxygen">Oxygen</label><br>
+                    <label><input type="radio" name="upsc38" value="Carbon Dioxide">Carbon Dioxide</label><br>
+                    <label><input type="radio" name="upsc38" value="Methane">Methane</label><br>
+                    <label><input type="radio" name="upsc38" value="Ozone">Ozone</label><br>
+                    <!-- Correct Answer: Ozone -->
+
+                    <li>Which famous scientist formulated the "Theory of Relativity"?</li>
+                    <label><input type="radio" name="upsc39" value="Isaac Newton">Isaac Newton</label><br>
+                    <label><input type="radio" name="upsc39" value="Galileo Galilei">Galileo Galilei</label><br>
+                    <label><input type="radio" name="upsc39" value="Albert Einstein">Albert Einstein</label><br>
+                    <label><input type="radio" name="upsc39" value="Nicolaus Copernicus">Nicolaus Copernicus</label><br>
+                    <!-- Correct Answer: Albert Einstein -->
+
+                    <li>What is the currency of China?</li>
+                    <label><input type="radio" name="upsc40" value="Yuan">Yuan</label><br>
+                    <label><input type="radio" name="upsc40" value="Rupee">Rupee</label><br>
+                    <label><input type="radio" name="upsc40" value="Dollar">Dollar</label><br>
+                    <label><input type="radio" name="upsc40" value="Peso">Peso</label><br>
+                    <!-- Correct Answer: Yuan -->
+                  </ol>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bottom-0 end-0 p-5">
+        <button type="button" class="btn btn-primary" id="submitBtn">Submit</button>
+      </div>
+    </footer>
+
+
+<script>
+  document.getElementById("submitBtn").addEventListener("click", submitQuizzes);
+
+  function submitQuizzes() {
+    const upscquizForm = document.getElementById("quizForm");
+    const userAnswer = new FormData(upscquizForm);
+
+    let score = 0;
+    const correctAnswers = [
+      "Sister",
+      "847",
+      "4",
+      "25√3",
+      "Mars",
+      "Harper Lee",
+      "Yen",
+      "Nitrogen",
+      "Punjab",
+      "George Washington",
+      "Nitrogen",
+      "William Shakespeare",
+      "Great Pyramid of Giza",
+      "Nile River",
+      "Albert Einstein",
+      "Leonardo da Vinci",
+      "Mars",
+      "Au",
+      "Yen",
+      "H2O",
+      "Mahatma Gandhi",
+      "Mars",
+      "William Shakespeare",
+      "Au",
+      "Brahmaputra",
+      "Leonardo da Vinci",
+      "Carbon Dioxide",
+      "George Orwell",
+      "Nitrous Oxide",
+      "Brasilia",
+      "Nitrous Oxide",
+      "B.R. Ambedkar",
+      "Venus",
+      "Ludwig van Beethoven",
+      "Mahatma Gandhi",
+      "Jupiter",
+      "Leo Tolstoy",
+      "Ozone",
+      "Albert Einstein",
+      "Yuan"
+    ];
+
+    for (let i = 0; i < correctAnswers.length; i++) {
+      const queNumber = `upsc${i + 1}`;
+      const userSelectedAnswer = userAnswer.get(queNumber);
+
+      if (userSelectedAnswer === correctAnswers[i]) {
+        score++;
+      }
+    }
+    const totalQuestions = correctAnswers.length;
+    alert(`You scored ${score} out of ${totalQuestions}`);
+  }
+</script>
+
+</body>
+</html>

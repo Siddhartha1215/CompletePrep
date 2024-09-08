@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="logo.png">
+    <title>NEET Quiz</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+            Welcome Back!!, NEET-bound Dreamweavers!</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#chemistry" class="nav-link">CHEMISTRY</a>
+            </li>
+            <li class="nav-item">
+              <a href="#physics" class="nav-link">PHYSICS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#biology" class="nav-link">BIOLOGY</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+      <div style="padding-top: 3%;" class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Welcome<span class="text-warning"> Future Doctors</span></h1>
+            <p class="lead my-4">
+                Ignite your mind, fuel your dreams, and conquer the NEET with the power of your relentless study.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+      <!-- chemistry -->
+      <section id="chemistryQuiz" class="p-5">
+        <div class="container">
+          <h2 id="chemistry" class="text-center mb-5">C H E M I S T R Y</h2>
+          <div class="row g-4">
+            <div class="col-md">
+              <div class="card bg-dark text-light">
+                <div class="card-body">
+                  <form id="CquizForm">
+                    <ol start="1">
+                      <li>What is the molecular formula for ethylene glycol?</li>
+                      <label><input type="radio" name="cq1" value="C4H8O2">C4H8O2</label><br>
+                      <label><input type="radio" name="cq1" value="C2H6O2">C2H6O2</label><br>
+                      <label><input type="radio" name="cq1" value="C2H4O2">C2H4O2</label><br><!-- Answer: B) C2H4O2 -->
+                      <label><input type="radio" name="cq1" value="C3H6O3">C3H6O3</label><br>
+      
+                      <li>Which element has the highest electronegativity value?</li>
+                      <label><input type="radio" name="cq2" value="Hydrogen">Hydrogen</label><br>
+                      <label><input type="radio" name="cq2" value="Oxygen">Oxygen</label><br><!--Answer: B) Oxygen -->
+                      <label><input type="radio" name="cq2" value="Fluorine">Fluorine</label><br>
+                      <label><input type="radio" name="cq2" value="Chlorine">Chlorine</label><br>
+      
+                      <li>What is the common name for acetylsalicylic acid?</li>
+                      <label><input type="radio" name="cq3" value="Ibuprofen">Ibuprofen</label><br>
+                      <label><input type="radio" name="cq3" value="Paracetamol">Paracetamol</label><br>
+                      <label><input type="radio" name="cq3" value="Aspirin">Aspirin</label><br><!-- Answer: C) Aspirin -->
+                      <label><input type="radio" name="cq3" value="Naproxen">Naproxen</label><br>
+      
+                      <li>Which reaction is used to synthesize alcohols from alkenes?</li>
+                      <label><input type="radio" name="cq4" value="Esterification">Esterification</label><br>
+                      <label><input type="radio" name="cq4" value="Halogenation">Halogenation</label><br>
+                      <label><input type="radio" name="cq4" value="Hydrogenation">Hydrogenation</label><br><!-- Answer: C) Hydrogenation -->
+                      <label><input type="radio" name="cq4" value="Dehydration">Dehydration</label><br>
+      
+                      <li>Which compound is responsible for the greenhouse effect?</li>
+                      <label><input type="radio" name="cq5" value="Carbon monoxide">Carbon monoxide</label><br>
+                      <label><input type="radio" name="cq5" value="Methane">Methane</label><br><!-- Answer: B) Methane -->
+                      <label><input type="radio" name="cq5" value="Sulfur dioxide">Sulfur dioxide</label><br>
+                      <label><input type="radio" name="cq5" value="Nitrous oxide">Nitrous oxide</label><br>
+      
+                      <li>What is the chemical formula for methane gas?</li>
+                      <label><input type="radio" name="cq6" value="CH3OH">CH3OH</label><br>
+                      <label><input type="radio" name="cq6" value="CH4">CH4</label><br><!-- Answer: B) CH4 -->
+                      <label><input type="radio" name="cq6" value="C2H6">C2H6</label><br>
+                      <label><input type="radio" name="cq6" value="CO2">CO2</label><br>
+      
+                      <li>What is the IUPAC name of CH3CH2COOH?</li>
+                      <label><input type="radio" name="cq7" value="Acetic acid">Acetic acid</label><br><!-- Answer: A) Acetic acid -->
+                      <label><input type="radio" name="cq7" value="Propanoic acid">Propanoic acid</label><br>
+                      <label><input type="radio" name="cq7" value="Butanoic acid">Butanoic acid</label><br>
+                      <label><input type="radio" name="cq7" value="Formic acid">Formic acid</label><br>
+      
+                      <li>Which gas is commonly known as "laughing gas"?</li>
+                      <label><input type="radio" name="cq8" value="Carbon dioxide">Carbon dioxide</label><br>
+                      <label><input type="radio" name="cq8" value="Oxygen">Oxygen</label><br>
+                      <label><input type="radio" name="cq8" value="Nitrous oxide">Nitrous oxide</label><br><!-- Answer: C) Nitrous oxide -->
+                      <label><input type="radio" name="cq8" value="Methane">Methane</label><br>
+      
+                      <li>Which compound is used as a refrigerant due to its low boiling point?</li>
+                      <label><input type="radio" name="cq9" value="Sulfur hexafluoride">Sulfur hexafluoride</label><br>
+                      <label><input type="radio" name="cq9" value="Carbon tetrachloride">Carbon tetrachloride</label><br>
+                      <label><input type="radio" name="cq9" value="Ammonia">Ammonia</label><br><!-- Answer: C) Ammonia -->
+      
+                      <li>Which element is used as a catalyst in the Haber process for ammonia synthesis?</li>
+                      <label><input type="radio" name="cq10" value="Iron">Iron</label><br><!-- Answer: A) Iron -->
+                      <label><input type="radio" name="cq10" value="Platinum">Platinum</label><br>
+                      <label><input type="radio" name="cq10" value="Copper">Copper</label><br>
+                      <label><input type="radio" name="cq10" value="Nickel">Nickel</label><br>
+                    </ol>
+                  </form>  
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- physics -->
+      <section id="physicsQuiz" class="p-5">
+        <div class="container">
+          <h2 id="physics" class="text-center mb-5">P H Y S I C S</h2>
+          <div class="row g-4">
+            <div class="col-md">
+              <div class="card bg-secondary">
+                <div class="card-body">
+                  <form id="PquizFor">
+                    <ol start="1">
+                      <li>Which phenomenon is responsible for the bending of light as it passes through different mediums?</li>
+                      <label><input type="radio" name="pq1" value="Reflection">Reflection</label><br>
+                      <label><input type="radio" name="pq1" value="Refraction">Refraction</label><br><!-- Answer: B) Refraction -->
+                      <label><input type="radio" name="pq1" value="Diffraction">Diffraction</label><br>
+                      <label><input type="radio" name="pq1" value="Dispersion">Dispersion</label><br>
+
+                      <li>What is the unit of electric charge?</li>
+                      <label><input type="radio" name="pq2" value="Ampere-hour">Ampere-hour</label><br>
+                      <label><input type="radio" name="pq2" value="Coulomb">Coulomb</label><br><!-- Answer: B) Coulomb -->
+                      <label><input type="radio" name="pq2" value="Ohm">Ohm</label><br>
+                      <label><input type="radio" name="pq2" value="Watt">Watt</label><br>
+
+                      <li>What is the SI unit of power?</li>
+                      <label><input type="radio" name="pq3" value="Joule">Joule</label><br>
+                      <label><input type="radio" name="pq3" value="Watt">Watt</label><br><!-- Answer: B) Watt -->
+                      <label><input type="radio" name="pq3" value="Coulomb">Coulomb</label><br>
+                      <label><input type="radio" name="pq3" value="Volt">Volt</label><br>
+
+                      <li>Which type of lens is thicker at the center than at the edges and can converge light?</li>
+                      <label><input type="radio" name="pq4" value="Convex lens">Convex lens</label><br><!-- Answer: A) Convex lens -->
+                      <label><input type="radio" name="pq4" value="Concave lens">Concave lens</label><br>
+                      <label><input type="radio" name="pq4" value="Bifocal lens">Bifocal lens</label><br>
+                      <label><input type="radio" name="pq4" value="Plano lens">Plano lens</label><br>
+
+                      <li>What is the term for the bending of a wave as it passes around an obstacle or through a narrow opening?</li>
+                      <label><input type="radio" name="pq5" value="Reflection">Reflection</label><br>
+                      <label><input type="radio" name="pq5" value="Refraction">Refraction</label><br>
+                      <label><input type="radio" name="pq5" value="Diffraction">Diffraction</label><br><!-- Answer: C) Diffraction -->
+                      <label><input type="radio" name="pq5" value="Dispersion">Dispersion</label><br>
+
+                      <li>Which law of motion states that for every action, there is an equal and opposite reaction?</li>
+                      <label><input type="radio" name="pq6" value="First law">First law</label><br>
+                      <label><input type="radio" name="pq6" value="Second law">Second law</label><br>
+                      <label><input type="radio" name="pq6" value="Third law">Third law</label><br><!-- Answer: C) Third law -->
+                      <label><input type="radio" name="pq6" value="Fourth law">Fourth law</label><br>
+
+                      <li>What is the process by which an atom or molecule absorbs light and then emits it as visible light?</li>
+                      <label><input type="radio" name="pq7" value="Reflection">Reflection</label><br>
+                      <label><input type="radio" name="pq7" value="Emission">Emission</label><br>
+                      <label><input type="radio" name="pq7" value="Absorption">Absorption</label><br>
+                      <label><input type="radio" name="pq7" value="Fluorescence">Fluorescence</label><br><!-- Answer: D) Fluorescence -->
+
+                      <li>Which phenomenon occurs when a wave source moves towards an observer, causing an increase in frequency and pitch?</li>
+                      <label><input type="radio" name="pq8" value="Doppler effect">Doppler effect</label><br><!-- Answer: A) Doppler effect -->
+                      <label><input type="radio" name="pq8" value="Beats">Beats</label><br>
+                      <label><input type="radio" name="pq8" value="Interference">Interference</label><br>
+                      <label><input type="radio" name="pq8" value="Resonance">Resonance</label><br>
+
+                      <li>What is the minimum velocity needed for an object to enter and remain in orbit around a planet?</li>
+                      <label><input type="radio" name="pq9" value="Escape velocity">Escape velocity</label><br>
+                      <label><input type="radio" name="pq9" value="Terminal velocity">Terminal velocity</label><br>
+                      <label><input type="radio" name="pq9" value="Orbital velocity">Orbital velocity</label><br><!-- Answer: C) Orbital velocity -->
+                      <label><input type="radio" name="pq9" value="Velocity of light">Velocity of light</label><br>
+
+                      <li>What is the law that states that the rate of heat transfer through a material is directly proportional to the temperature difference across the material and inversely proportional to the material's thermal resistance?</li>
+                      <label><input type="radio" name="pq10" value="Fourier's law">Fourier's law</label><br><!-- Answer: A) Fourier's law -->
+                      <label><input type="radio" name="pq10" value="Newton's law of cooling">Newton's law of cooling</label><br>
+                      <label><input type="radio" name="pq10" value="Ohm's law">Ohm's law</label><br>
+                      <label><input type="radio" name="pq10" value="Hooke's law">Hooke's law</label><br>
+                    </ol>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+  
+      <!-- biology -->
+      <section id="biologyQuiz" class="p-5">
+        <div class="container">
+          <h2 id="biology" class="text-center mb-5">B I O L O G Y</h2>
+          <div class="row g-4">
+            <div class="col-md">
+              <div class="card bg-dark text-light">
+                <div class="card-body">
+                  <form id="BquizForm">
+                    <ol start="1">
+                      <li>Which organelle is responsible for photosynthesis in plant cells?</li>
+                      <label><input type="radio" name="bq1" value="Mitochondria">Mitochondria</label><br>
+                      <label><input type="radio" name="bq1" value="Chloroplast">Chloroplast</label><br><!-- Answer: B) Chloroplast -->
+                      <label><input type="radio" name="bq1" value="Golgi apparatus">Golgi apparatus</label><br>
+                      <label><input type="radio" name="bq1" value="Endoplasmic reticulum">Endoplasmic reticulum</label><br>
+
+                      <li>Which enzyme is responsible for breaking down carbohydrates in the mouth?</li>
+                      <label><input type="radio" name="bq2" value="Pepsin">Pepsin</label><br>
+                      <label><input type="radio" name="bq2" value="Amylase">Amylase</label><br><!-- Answer: B) Amylase -->
+                      <label><input type="radio" name="bq2" value="Lipase">Lipase</label><br>
+                      <label><input type="radio" name="bq2" value="Trypsin">Trypsin</label><br>
+
+                      <li>Which of the following blood vessels carries deoxygenated blood from the body to the heart?</li>
+                      <label><input type="radio" name="bq3" value="Pulmonary vein">Pulmonary vein</label><br>
+                      <label><input type="radio" name="bq3" value="Aorta">Aorta</label><br>
+                      <label><input type="radio" name="bq3" value="Vena cava">Vena cava</label><br><!-- Answer: C) Vena cava -->
+                      <label><input type="radio" name="bq3" value="Pulmonary artery">Pulmonary artery</label><br>
+
+                      <li>Which of the following is the smallest bone in the human body?</li>
+                      <label><input type="radio" name="bq4" value="Femur">Femur</label><br>
+                      <label><input type="radio" name="bq4" value="Radius">Radius</label><br>
+                      <label><input type="radio" name="bq4" value="Coccyx">Coccyx</label><br>
+                      <label><input type="radio" name="bq4" value="Stapes">Stapes</label><br><!-- Answer: D) Stapes -->
+
+                      <li>Which part of the human brain is responsible for regulating body temperature and hunger?</li>
+                      <label><input type="radio" name="bq5" value="Cerebellum">Cerebellum</label><br>
+                      <label><input type="radio" name="bq5" value="Hippocampus">Hippocampus</label><br>
+                      <label><input type="radio" name="bq5" value="Thalamus">Thalamus</label><br>
+                      <label><input type="radio" name="bq5" value="Hypothalamus">Hypothalamus</label><br><!-- Answer: D) Hypothalamus -->
+
+                      <li>Which type of blood cells are responsible for immune responses and defense against infections?</li>
+                      <label><input type="radio" name="bq6" value="Red blood cells">Red blood cells</label><br>
+                      <label><input type="radio" name="bq6" value="Platelets">Platelets</label><br>
+                      <label><input type="radio" name="bq6" value="White blood cells">White blood cells</label><br><!-- Answer: C) White blood cells -->
+                      <label><input type="radio" name="bq6" value="Plasma cells">Plasma cells</label><br>
+
+                      <li>Which process involves the movement of water molecules through a semipermeable membrane from an area of lower solute concentration to an area of higher solute concentration?</li>
+                      <label><input type="radio" name="bq7" value="Active transport">Active transport</label><br>
+                      <label><input type="radio" name="bq7" value="Osmosis">Osmosis</label><br><!-- Answer: B) Osmosis -->
+                      <label><input type="radio" name="bq7" value="Diffusion">Diffusion</label><br>
+                      <label><input type="radio" name="bq7" value="Exocytosis">Exocytosis</label><br>
+
+                      <li>Which hormone is responsible for regulating blood sugar levels in the body?</li>
+                      <label><input type="radio" name="bq8" value="Insulin">Insulin</label><br><!-- Answer: A) Insulin -->
+                      <label><input type="radio" name="bq8" value="Thyroxine">Thyroxine</label><br>
+                      <label><input type="radio" name="bq8" value="Melatonin">Melatonin</label><br>
+                      <label><input type="radio" name="bq8" value="Estrogen">Estrogen</label><br>
+
+                      <li>Which of the following is responsible for the transmission of nerve impulses between neurons?</li>
+                      <label><input type="radio" name="bq9" value="Synapse">Synapse</label><br><!-- Answer: A) Synapse -->
+                      <label><input type="radio" name="bq9" value="Axon">Axon</label><br>
+                      <label><input type="radio" name="bq9" value="Dendrite">Dendrite</label><br>
+                      <label><input type="radio" name="bq9" value="Myelin sheath">Myelin sheath</label><br>
+
+                      <li>Which process involves the conversion of glucose into pyruvate, producing a small amount of ATP and NADH?</li>
+                      <label><input type="radio" name="bq10" value="Glycolysis">Glycolysis</label><br><!-- Answer: A) Glycolysis -->
+                      <label><input type="radio" name="bq10" value="Krebs cycle">Krebs cycle</label><br>
+                      <label><input type="radio" name="bq10" value="Electron transport chain">Electron transport chain</label><br>
+                      <label><input type="radio" name="bq10" value="Oxidative phosphorylation">Oxidative phosphorylation</label><br>
+
+                      <li>Which of the following is the smallest unit of life?</li>
+                      <label><input type="radio" name="bq11" value="Cell">Cell</label><br><!-- Answer: A) Cell -->
+                      <label><input type="radio" name="bq11" value="Atom">Atom</label><br>
+                      <label><input type="radio" name="bq11" value="Molecule">Molecule</label><br>
+                      <label><input type="radio" name="bq11" value="Tissue">Tissue</label><br>
+
+                      <li>Which part of the plant is responsible for gas exchange and transpiration?</li>
+                      <label><input type="radio" name="bq12" value="Stem">Stem</label><br>
+                      <label><input type="radio" name="bq12" value="Root">Root</label><br>
+                      <label><input type="radio" name="bq12" value="Leaf">Leaf</label><br><!-- Answer: C) Leaf -->
+                      <label><input type="radio" name="bq12" value="Flower">Flower</label><br>
+
+                      <li>Which of the following is a water-soluble vitamin?</li>
+                      <label><input type="radio" name="bq13" value="Vitamin A">Vitamin A</label><br>
+                      <label><input type="radio" name="bq13" value="Vitamin D">Vitamin D</label><br>
+                      <label><input type="radio" name="bq13" value="Vitamin K">Vitamin K</label><br>
+                      <label><input type="radio" name="bq13" value="Vitamin C">Vitamin C</label><br><!-- Answer: D) Vitamin C -->
+
+                      <li>Which type of tissue connects muscles to bones?</li>
+                      <label><input type="radio" name="bq14" value="Nervous tissue">Nervous tissue</label><br>
+                      <label><input type="radio" name="bq14" value="Epithelial tissue">Epithelial tissue</label><br>
+                      <label><input type="radio" name="bq14" value="Connective tissue">Connective tissue</label><br><!-- Answer: C) Connective tissue -->
+                      <label><input type="radio" name="bq14" value="Muscular tissue">Muscular tissue</label><br>
+
+                      <li>Which of the following is an example of a monosaccharide?</li>
+                      <label><input type="radio" name="bq15" value="Starch">Starch</label><br>
+                      <label><input type="radio" name="bq15" value="Cellulose">Cellulose</label><br>
+                      <label><input type="radio" name="bq15" value="Glucose">Glucose</label><br><!-- Answer: C) Glucose -->
+                      <label><input type="radio" name="bq15" value="Sucrose">Sucrose</label><br>
+
+                      <li>Which of the following is responsible for producing insulin in the body?</li>
+                      <label><input type="radio" name="bq16" value="Liver">Liver</label><br>
+                      <label><input type="radio" name="bq16" value="Pancreas">Pancreas</label><br><!-- Answer: B) Pancreas -->
+                      <label><input type="radio" name="bq16" value="Kidney">Kidney</label><br>
+                      <label><input type="radio" name="bq16" value="Thyroid">Thyroid</label><br>
+
+                      <li>Which of the following is responsible for carrying oxygen in the blood?</li>
+                      <label><input type="radio" name="bq17" value="Platelets">Platelets</label><br>
+                      <label><input type="radio" name="bq17" value="Red blood cells">Red blood cells</label><br><!-- Answer: B) Red blood cells -->
+                      <label><input type="radio" name="bq17" value="White blood cells">White blood cells</label><br>
+                      <label><input type="radio" name="bq17" value="Plasma">Plasma</label><br>
+
+                      <li>Which of the following is responsible for breaking down fats in the digestive system?</li>
+                      <label><input type="radio" name="bq18" value="Pepsin">Pepsin</label><br>
+                      <label><input type="radio" name="bq18" value="Amylase">Amylase</label><br>
+                      <label><input type="radio" name="bq18" value="Lipase">Lipase</label><br><!-- Answer: C) Lipase -->
+                      <label><input type="radio" name="bq18" value="Trypsin">Trypsin</label><br>
+
+                      <li>Which of the following is the largest gland in the human body?</li>
+                      <label><input type="radio" name="bq19" value="Thyroid">Thyroid</label><br>
+                      <label><input type="radio" name="bq19" value="Liver">Liver</label><br><!-- Answer: B) Liver -->
+                      <label><input type="radio" name="bq19" value="Pancreas">Pancreas</label><br>
+                      <label><input type="radio" name="bq19" value="Spleen">Spleen</label><br>
+
+                      <li>Which of the following is responsible for the sensation of taste?</li>
+                      <label><input type="radio" name="bq20" value="Cochlea">Cochlea</label><br>
+                      <label><input type="radio" name="bq20" value="Retina">Retina</label><br>
+                      <label><input type="radio" name="bq20" value="Taste buds">Taste buds</label><br><!-- Answer: C) Taste buds -->
+                      <label><input type="radio" name="bq20" value="Olfactory bulb">Olfactory bulb</label><br>
+                    </ol>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <footer>
+        <div class="bottom-0 end-0 p-5">
+          <button type="button" class="btn btn-primary" id="submitBtn">Submit</button>
+        </div>
+      </footer>
+
+
+      <script>
+
+        document.getElementById("submitBtn").addEventListener("click", submitQuizzes);
+
+        function calculateChemistryScore() {
+          const chemistryQuizForm = document.getElementById("CquizForm");
+          const chemistryUserAnswers = new FormData(chemistryQuizForm);
+
+          let chemistryScore = 0;
+
+          const chemistryCorrectAnswers = [
+            "C2H4O2",
+            "Oxygen",
+            "Aspirin",
+            "Hydrogenation",
+            "Methane",
+            "CH4",
+            "Acetic acid",
+            "Nitrous oxide",
+            "Ammonia",
+            "Iron",
+          ];
+
+          for (let i = 0; i < chemistryCorrectAnswers.length; i++) {
+            const questionNumber = `cq${i + 1}`;
+            const userAnswer = chemistryUserAnswers.get(questionNumber);
+            if (userAnswer === chemistryCorrectAnswers[i]) {
+              chemistryScore++;
+            }
+          }
+
+          sessionStorage.setItem('chemistryScore', chemistryScore);
+
+          alert(`Your Chemistry score is: ${chemistryScore}/${chemistryCorrectAnswers.length}`);
+        }
+
+
+        function calculateBioScore() {
+          const bioQuizForm = document.getElementById("BquizForm");
+          const bioUserAnswers = new FormData(bioQuizForm);
+
+          let bioScore = 0;
+
+          const bioCorrectAnswers = [
+            "Chloroplast",
+            "Amylase",
+            "Vena cava",
+            "Stapes",
+            "Hypothalamus",
+            "White blood cells",
+            "Osmosis",
+            "Insulin",
+            "Synapse",
+            "Glycolysis",
+            "Cell",
+            "Leaf",
+            "Vitamin C",
+            "Connective tiss",
+            "Glucose",
+            "Pancreas",
+            "Red blood cells",
+            "Lipase",
+            "Liver",
+            "Taste buds",
+          ];
+
+          for (let i = 0; i < bioCorrectAnswers.length; i++) {
+            const questionNumber = `bq${i + 1}`;
+            const userAnswer = bioUserAnswers.get(questionNumber);
+            if (userAnswer === bioCorrectAnswers[i]) {
+              bioScore++;
+            }
+          }
+
+          sessionStorage.setItem('bioScore', bioScore);
+          alert(`Your Biology score is: ${bioScore}/${bioCorrectAnswers.length}`);
+        }
+
+        function calculatePhysicsScore() {
+          const physicsQuizForm = document.getElementById("PquizFor");
+          const physicsUserAnswers = new FormData(physicsQuizForm);
+
+          let physicsScore = 0;
+
+          const physicsCorrectAnswers = [
+            "Refraction",
+            "Coulomb",
+            "Watt",
+            "Convex lens",
+            "Diffraction",
+            "Third law",
+            "Fluorescence",
+            "Doppler effect",
+            "Orbital velocity",
+            "Fourier's law",
+          ];
+
+          for (let i = 0; i < physicsCorrectAnswers.length; i++) {
+            const questionNumber = `pq${i + 1}`;
+            const userAnswer = physicsUserAnswers.get(questionNumber);
+            if (userAnswer === physicsCorrectAnswers[i]) {
+              physicsScore++;
+            }
+          }
+
+          sessionStorage.setItem('physicsScore', physicsScore);
+          alert(`Your Physics score is: ${physicsScore}/${physicsCorrectAnswers.length}`);
+        }
+
+
+        function submitQuizzes() {
+          calculateChemistryScore();
+          calculatePhysicsScore();
+          calculateBioScore();
+          
+
+          const bioScore = sessionStorage.getItem('bioScore') || 0;
+          const chemistryScore = sessionStorage.getItem('chemistryScore') || 0;
+          const physicsScore = sessionStorage.getItem('physicsScore') || 0;
+
+          const totalScore = parseInt(bioScore) + parseInt(chemistryScore) + parseInt(physicsScore);
+
+          alert(`Chemistry score: ${chemistryScore}\nPhysics score: ${physicsScore}\nBiology score: ${bioScore}\nTotal score: ${totalScore}`);
+        }
+
+      </script>
+</body>
